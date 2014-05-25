@@ -11,5 +11,8 @@
     "request"
   ],
   "author": "Kristofer Selbekk",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.3.1"
+  }
 }
