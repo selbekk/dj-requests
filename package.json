@@ -13,6 +13,9 @@
   "author": "Kristofer Selbekk",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.3.1"
+    "express": "^4.3.1",
+    "basic-logger": "^0.4.4",
+    "body-parser": "^1.2.0",
+    "path": "^0.4.9"
   }
 }
