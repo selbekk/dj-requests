@@ -3,7 +3,7 @@ var log = new Logger();
 
 module.exports = {
 	show: function(req, res) {
-		log.trace('showing webapp front page');
+		log.info('showing webapp front page');
 		res.send(200);
 	}
 }

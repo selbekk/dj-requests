@@ -13,9 +13,11 @@
   "author": "Kristofer Selbekk",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.3.1",
+    "express": "3.3.1",
     "basic-logger": "^0.4.4",
     "body-parser": "^1.2.0",
-    "path": "^0.4.9"
+    "path": "^0.4.9",
+    "handlebars": "^2.0.0-alpha.4",
+    "consolidate": "^0.10.0"
   }
 }
