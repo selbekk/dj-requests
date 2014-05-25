@@ -1,8 +1,9 @@
 var webController = require('./web/controller.js');
 
+
 module.exports = {
-	route: function(server) {
-		server.get('/', webController.show);
+	route: function(app) {
+		app.get('/', webController.frontPage);
 	}
 };
 

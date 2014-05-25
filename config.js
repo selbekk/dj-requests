@@ -10,12 +10,6 @@ module.exports = {
 };
 
 var setupErrorHandling = function(app) {
-	/// catch 404 and forwarding to error handler
-	app.use(function(req, res, next) {
-    		var err = new Error('Not Found');
-    		err.status = 404;
-    		next(err);
-	});
 
 	// development error handler
 	// will print stacktrace
@@ -42,10 +36,9 @@ var setupErrorHandling = function(app) {
 var setup = function(app) {
 	app.set('port', process.env.PORT || 3000);
 	app.set('views', './web/views');
+	app.set('view engine', 'hbs');
 
 	app.engine('hbs', cons.handlebars);
-
-	app.set('view engine', 'hbs');
 
 	app.use(express.static(__dirname + '/public'));
 	app.use(express.logger('dev'));

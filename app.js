@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
 
-var router = require('./router.js');
 var config = require('./config.js');
+var router = require('./router.js');
 
 config.setup(app);
 router.route(app);
