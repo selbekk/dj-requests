@@ -19,6 +19,7 @@
     "path": "^0.4.9",
     "handlebars": "^2.0.0-alpha.4",
     "consolidate": "^0.10.0",
-    "crypto": "0.0.3"
+    "crypto": "0.0.3",
+    "mongodb": "^1.4.5"
   }
 }
