@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API Documentation</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 well">
+            <h1>Log in</h1>
+            <p class="hidden-xs"></p>
+            <form action="/login" method="post">
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-envelope">&nbsp;</span>
+                    <input type="email" id="email" class="form-control" name="email" placeholder="e-mail" required />
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-lock">&nbsp;</span>
+                    <input type="password" id="password" class="form-control" name="password" placeholder="password" required />
+                </div>
+                <input type="submit" value="Log in" />
+            </form>
+            <p>
+                <a href="/register">Register for free</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="/js/vendor/jquery-1.11.1.min.js"></script>
+<script src="/js/vendor/bootstrap.min.js"></script>
+</body>
+</html>

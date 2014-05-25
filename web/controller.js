@@ -11,11 +11,19 @@ module.exports = {
         res.render('api-info');
     },
 
-    loginPage: function(req, res) {
+    registerPage: function(req, res) {
+        res.render('register');
+    },
 
+    register: function(req, res) {
+        res.send(200);
+    },
+
+    loginPage: function(req, res) {
+        res.render('login');
     },
 
     login: function(req, res) {
-
+        res.send(200);
     }
 }
