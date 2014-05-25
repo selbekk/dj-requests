@@ -4,7 +4,7 @@ var log = new (require('basic-logger'))();
 
 const DB_PROTOCOL = 'mongodb';
 const DB_HOST = 'localhost';
-const DB_PORT = '21017';
+const DB_PORT = '27017';
 const DB_NAME = 'djrequests';
 const USERS_COLLECTION = 'users';
 
