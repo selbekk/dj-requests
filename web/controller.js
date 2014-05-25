@@ -1,5 +1,6 @@
 var Logger = require('basic-logger');
 var log = new Logger();
+var userResource = require('../user/resource');
 
 module.exports = {
     app: function(req, res) {
@@ -16,6 +17,11 @@ module.exports = {
     },
 
     register: function(req, res) {
+        var username = req.body.username;
+        var password = req.body.password;
+
+        userResource.register(username, password);
+
         res.send(200);
     },
 
