@@ -1,0 +1,15 @@
+{
+  "name": "dj-requests",
+  "version": "0.0.0",
+  "description": "An app to request music from a DJ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dj",
+    "request"
+  ],
+  "author": "Kristofer Selbekk",
+  "license": "ISC"
+}
