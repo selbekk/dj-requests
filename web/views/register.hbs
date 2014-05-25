@@ -8,7 +8,7 @@
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/shared.css" rel="stylesheet">
-    <link href="/css/login.css" rel="stylesheet">
+    <link href="/css/register.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -20,20 +20,20 @@
     <div class="row">
         <div class="col-sm-6 col-sm-offset-3 well">
             <h1>Log in</h1>
-            <p class="hidden-xs">To get the full use of our services - you need to log in.</p>
-            <form action="/login" method="post">
+            <p class="hidden-xs">Registration is easy. Just give us your details, and you're ready to go.</p>
+            <form action="/register" method="post">
                 <div class="input-group">
                     <span class="input-group-addon glyphicon glyphicon-envelope">&nbsp;</span>
-                    <input type="email" id="email" class="form-control" name="email" placeholder="e-mail" required />
+                    <input type="email" id="email" class="form-control" name="email" placeholder="your e-mail" required />
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon glyphicon glyphicon-lock">&nbsp;</span>
-                    <input type="password" id="password" class="form-control" name="password" placeholder="password" required />
+                    <input type="password" id="password" class="form-control" name="password" placeholder="your password" required />
                 </div>
-                <input type="submit" value="Log in" />
+                <input type="submit" value="Register" />
             </form>
             <p>
-                <a href="/register">Register for free</a>
+                <a href="/login">Have an account? Log in</a>
             </p>
         </div>
     </div>
