@@ -1,8 +1,16 @@
+# Dependencies
 node_modules/
+
+# Editor specifics
 .idea/
 *.iml
 *.imr
 
+# OS specifics
 .DS_Store
 
+# Logs
 *.log
+
+# Built files
+dist/

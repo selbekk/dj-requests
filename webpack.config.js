@@ -4,8 +4,8 @@ const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const PATHS = {
-    app: path.join(__dirname, 'js', 'main.js'),
-    style: path.join(__dirname, 'scss', 'main.scss')
+    app: path.join(__dirname, 'src', 'client-render.js'),
+    style: path.join(__dirname, 'src', 'scss', 'main.scss')
 };
 
 module.exports = {
@@ -13,13 +13,13 @@ module.exports = {
         app: PATHS.app
     },
     output: {
-        path: path.join(__dirname, 'app', 'resources'),
+        path: path.join(__dirname, 'dist'),
         filename: 'bundle.js'
     },
     resolve: {
-        root: [path.join(__dirname, 'js'), path.join(__dirname, 'node_modules')],
+        root: [path.join(__dirname, 'src'), path.join(__dirname, 'node_modules')],
         alias: {
-            css: path.join(__dirname, 'scss')
+            css: path.join(__dirname, 'src', 'scss')
         }
     },
     module: {
@@ -27,7 +27,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loaders: ['eslint'],
-                include: path.join(__dirname, 'js')
+                include: path.join(__dirname, 'src')
             }
         ],
         loaders: [

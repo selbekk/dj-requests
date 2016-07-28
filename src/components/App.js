@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 
 const AppComponent = ({ children }) => (
-    <div className="app">
+    <div>
         <header className="site-header">
             <h1 className="site-header-logo"><Link to="/">DJ Requests</Link></h1>
             <nav className="site-header-navigation">
@@ -16,8 +16,12 @@ const AppComponent = ({ children }) => (
                 </ul>
             </nav>
         </header>
-        { children }
+        {children}
     </div>
 );
+
+AppComponent.propTypes = {
+    children: PropTypes.element.isRequired,
+};
 
 export default AppComponent;

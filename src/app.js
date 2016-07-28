@@ -21,7 +21,7 @@ app.set('view engine', 'handlebars');
 app.set('views', __dirname + '/views');
 app.set('port', process.env.PORT || 4000);
 
-app.use(express.static('assets'));
+app.use('/assets', express.static(path.join(__dirname, '..', '/dist')));
 
 app.get('*', (req, res) => {
     match({ routes, location: req.url}, (err, redirectLocation, props) => {
