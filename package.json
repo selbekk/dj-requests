@@ -7,7 +7,7 @@
     "build": "webpack",
     "dist": "webpack -p",
     "watch": "npm run build -- --watch",
-    "server": "babel-node src/app.js",
+    "start": "babel-node src/app.js",
     "lint": "eslint src/"
   },
   "repository": {
