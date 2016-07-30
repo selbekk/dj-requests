@@ -8,5 +8,7 @@ export const routes = {
     childRoutes: [
         { path: '/', component: IndexComponent },
         { path: '/about', component: AboutComponent },
+        // TODO: Add routes for creating a party, for voting on a party and for watching the votes
+
     ],
 };
